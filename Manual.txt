@@ -1,0 +1,7 @@
+INSTRUCCIONES
+
+
+En la carpeta esta el archivo secretaria.sql el cual se debe restaruar en la base de datos secretaria.
+las consultas adicionales estan en el otro archivo
+para revisar la aplicacion, llevar la carpeta transito al servidor web local
+en el navegador abrir la siguiente URL: http://localhost/Transito/php/menu.php#
