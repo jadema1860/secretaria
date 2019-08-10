@@ -54,7 +54,7 @@ mysqli_close($myconex);
                                                     $consulta="select * from rango";
                                                     $sql=mysqli_query($myconex,$consulta);
                                                     ?>
-                                                        <select name="sexo" id="genero" class="form-control">
+                                                        <select name="sexo" id="desRango" class="form-control">
                                                         <?php while($row = mysqli_fetch_array($sql, MYSQLI_ASSOC))
                                                         {
                                                         if($row['desRango']==$Rango){

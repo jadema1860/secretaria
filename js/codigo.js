@@ -3,7 +3,7 @@ $(document).ready(function() {
 //$('.hab').attr('disabled','disabled');
 
 $("#new_nota").change(function(e){
-alert('');
+
 
 $("#calculada").html('hola');
 
@@ -280,7 +280,7 @@ $("#grado").change(function(e){
 //busqueda estudiante por programa
 	$("#btn_bus_pro").click(function(e){
 		e.preventDefault();
-		alert($("#desRango").val());
+		
 		if($("#desRango").val()!=""){		
 		var datos =  {
 			
@@ -1068,7 +1068,7 @@ $("#login1").click(function(e){
       }else{
         $("#mensaje1").fadeOut();
         
-       
+       alert(idAgente);
          var data = new FormData();    
          data.append('idAgente',idAgente);
          data.append('nomAgente',nomAgente);
@@ -1090,7 +1090,7 @@ $("#login1").click(function(e){
            $("#resultado").html("<div class='alert alert-dismissible alert-info'><strong>Actualizando</strong> Actualizando información Egresado</div>");
             $('#login1').val("Ingresar");
             if (data=="1") {//<button type='button' class='close' data-dismiss='alert'>&times;</button>
-             $("#resultado").html("<div class='alert alert-dismissible alert-success'><strong>¡Correcto!</strong> Egresado Actualizado con Éxito, Ahora diligencie la sigiente encuesta.<br><div class='container center-block'><iframe src='https://docs.google.com/forms/d/e/1FAIpQLSeCk-xQmdNrH1tIqhVlwZqFToNn7itrAD4-NBYNeMM5IICnnA/viewform?embedded=true' width='700' height='520' frameborder='0' marginheight='0' marginwidth='0'>Cargando...</iframe></div></div>");
+             $("#resultado").html("<div class='alert alert-dismissible alert-success'><strong>¡Correcto!</strong> Egresado Actualizado con Éxito</div>");
             } else {
               $("#resultado").html("<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Error!</strong> Error al Actualizar Estudiante.</div>");
             }

@@ -15,7 +15,7 @@ if (!isset($_SESSION['control'])) {
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>ESSC</title>
+	<title>Secretaria</title>
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 	<script src="../js/jquery.min-1.10.2.js"></script>
 	<script src="../js/codigo.js"></script>
@@ -116,46 +116,13 @@ $doc_est = "";
 						
 						</ul>
 					</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">Empresa/Entidad <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						<li><a onClick="cargarFormulario('formulario_empresa.php')" href="#">Nuevo Empresa/Entidad</a></li>
-						<li><a onClick="cargarFormulario('busqueda_todo_empresa.php')" href="#">Gestion Empresa/Entidad</a></li>
-						</ul>
-					</li>
+		
 				
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">Bolsa de Empleo <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						<li><a onClick="cargarFormulario('formulario_solicitud.php')" href="#">Crear Solicitud</a></a></li>
-						<li><a onClick="cargarFormulario('busqueda_todo_solicitud.php')" href="#">Solitiudes Abiertas</a></a></li>
-						<li><a onClick="cargarFormulario('busqueda_solicitud_cerrada.php')" href="#">Solitiudes Cerradas</a></a></li>
-						</ul>
-				</li>
-
-			<!--	<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">Matriculas <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						<li><a onClick="cargarFormulario('formulario_matricula_individual.php')" href="#">Matricula Individual</a></li>
-						<li><a href="#">Promoción Curso</a></li>
-						</ul>
-				</li>
--->
+				
 			
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">Confirguración <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						<li><a onClick="cargarFormulario('formulario_horario.php')" href="#">Horarios</a></li>
-						<li><a onClick="cargarFormulario('formulario_mail.php')" href="#">Enviar Correo Masivo</a></li>
-						<!--<li><a onClick="cargarFormulario('formulario_lectivo.php')" href="#">Año Lectivo</a></li>
-						<li><a onClick="cargarFormulario('parametros.php')" href="#">Parametros</a></li>
-						<li><a onClick="cargarFormulario('formulario_materias.php')" href="#">Nueva Materia</a></li>						
-						<li><a onClick="cargarFormulario('busqueda_materias.php')" href="#">Gestion/Materias</a></li>-->						
-
-						</ul>
-				</li>
+			
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">	
@@ -247,7 +214,7 @@ $doc_est = "";
 				}
 				?>
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" rol="button">
-			<img src="../fotografias/<?php echo "$foto" ?>" alt="imagen" class="img-circle" width="45px" height="45px">
+			<img src="../fotografias/sinfoto.jpg" alt="imagen" class="img-circle" width="45px" height="45px">
 					<?php echo "  ". $_SESSION["nom_completo"]; ?><span class="caret"></span></a>
 
 					<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#dataUpdate" data-id_estudiante="<?php echo $fila['id_estudiante']?>" data-nom_estudiante="<?php echo $fila['nom_estudiante']?>" data-ape_estudiante="<?php echo $fila['ape_estudiante']?>" data-tel="<?php echo $fila['tel_estudiante']?>" data-capital="<?php echo $fila['documento']?>" data-continente="<?php echo $fila['documento']?>"><i class='glyphicon glyphicon-edit'></i> Modificar</button>-->
@@ -262,14 +229,14 @@ $doc_est = "";
 			<?php	} ?>
 			</div>
 		</nav>
-		<p class="text text-primary small">Desarrollado: JdS Software: 313 793 14 68</p>
+	
 		</div>
 	</header>
 <div class="container" id="pagina">
 	
 	<section class="main">
 	
-<h1 class='text-info'>Escuela de salud Sur Colombiana</h1>	
+<h1 class='text-info'>Secretaria Transito</h1>	
 
 	</section>
 </div>

@@ -20,7 +20,7 @@ $desRango = "";
 	
 			$consulta="UPDATE agente set 
 			 nomAgente='$nomAgente',
-			 desRango='$desRango'
+			 Rango='$desRango'
 			
 		 where 
 			 idAgente='$idAgente'";
