@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="img/favicon.jpg" sizes="32x32" />
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>Egresados Essc</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+
+    
+
+<!--<link rel="stylesheet" href="css/style.css">-->
+<link rel="stylesheet" href="css/mystyle.css">
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+   <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+   <script src="js/jquery.min.1.10.2.js"></script>
+  <!--  <script src="js/codigo.js"></script> -->
+  <script src="js/script.js"></script>  
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Escuela de Salud Sur Colombiana</h3>
+
+              <nav>
+                <ul class="nav masthead-nav">
+                 <!-- <li class="active"><a href="#">Inicio</a></li>-->
+                  <!--<li><a href="#">Features</a></li>-->
+                  <li><a href="#ventana3" data-toggle="modal">Registro Entidad/Empresa</a></li>
+                  <li><a href="#ventana4" data-toggle="modal">Registro Egresado</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover"><br><br><br><br>
+          <img class="img-circle" alt="Cinque Terre" width="300" height="300" src="img/escudo.png" width="40%">
+            <h1 class="cover-heading">Escuela de Salud Sur Colombiana </h1>
+            <p class="lead">Sistema de Egresados</p>
+
+            <p class="lead">
+              <a href="#ventana1" class="btn btn-lg btn-default" data-toggle="modal">Ingresar</a>
+            </p>
+
+            <h5 class="text-right text-default"><strong>Desarrollado por Jadema Software (JdS)-313 793 1468</strong></h5>
+          </div>
+          <!-- Inicia modal -->
+        		<div class="modal fade" id="ventana1">
+                 <div class="modal-dialog">
+                    <div class="modal-content">
+                    <button type="button" class="close salir" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div class="modal-header">
+                      <h3 class="modal-title textos inicio" >Ingreso Escuela de Saud Sur Colombiana</h3>
+                      
+                       </div>
+                          <div class="modal-body">
+                                               
+                          <div > 
+            <form method="post" class="formulario">
+            <div class="form-group">
+              <label for="user">Usuario</label>
+              <input type="text" name="user" id="user" class="form-control" placeholder="Usuario">
+              <div id="mensajeNombre" class="errores">Ingrese su Usuario</div>
+            </div>
+            <div class="form-group">
+              <label for="pass">Contraseña</label>
+              <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña">
+              <div id="mensaje2" class="errores">Ingrese su Contraseña</div>
+            </div>          
+            
+            <div class="form-group">
+         
+              <input type="submit" name="login" id="login" value="Ingresar" class="btn btn-success"> 
+              <button type="button" class="btn btn-danger salir" data-dismiss="modal" >Cerrar</button>
+           </div>
+            <br>
+            <span id="result"></span>
+                                      
+                              </form>
+                            </div>
+                       <div id="respuesta-ingreso"></div>
+                      
+                       </div>
+                       <div class="modal-footer">                 
+             <a href="#ventana2" data-toggle="modal" class=""><button type="button" class="close salir" data-dismiss="modal" aria-hidden="true">Olvidó su contraseña?</button></a>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          <!--final modal-->
+
+         
+
+
+          <!-- Inicia modal 2-->
+            <div class="modal fade" id="ventana2">
+                 <div class="modal-dialog">
+                    <div class="modal-content">
+                    <button type="button" class="close salir" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div class="modal-header">
+                      <h3 class="modal-title textos inicio" >Recuperacion Contraseña Egresados ESSC</h3>
+                      
+                       </div>
+                          <div class="modal-body">
+                                               
+                          <div > 
+            <form method="post" class="formulario">
+            <div class="form-group">
+              <label for="user">Cuenta de correo eletrónico</label>
+              <input type="mail" name="user" id="correo" class="form-control" placeholder="Cuenta de correo electrónico">
+              <div id="mensaje3" class="errores">Ingrese su cuenta de correo </div>
+            </div>
+
+             <div class="form-group">
+              <label for="user">Usted es:</label>
+              <select class="form-control" id="tipo_usuario">                
+                  <option value="0" >Egresado</option>
+                  <option value="1">Entidad/Empresa</option>
+                  <option value="2">Administrativo</option>
+              </select>             
+            </div>
+                      
+            
+            <div class="form-group">
+
+
+           
+              <input type="submit" name="login" id="login_rescate" value="Restablecer" class="btn btn-success"> 
+              <button type="button" class="btn btn-danger salir" data-dismiss="modal" >Cerrar</button>
+           </div>
+            <br>
+            <span id="result"></span>
+                                      
+                              </form>
+                            </div>
+                       <div id="respuesta-ingreso_correo"></div>
+                      
+                       </div>
+                      
+
+                      </div>
+                      </div>
+                    
+                 </div>
+              </div>
+          <!--final modal 2-->
+
+ <!-- Inicia modal 3 -->
+      <div class="modal fade" id="ventana3">
+                 <div class="modal-dialog modal-lg">
+                    <div class="modal-content" >
+                    <button type="button" class="close salir" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div class="modal-header">
+                      <h3 class="modal-title textos inicio" >Registro Entidad/Empresa</h3>
+                      
+                       </div>
+                          <div class="modal-body" id="resultado">
+                       <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form method="post" class="formulario">
+            <div class="form-group">
+              <label for="user">Nit Empresa/Entidad</label>
+              <input type="text" id="nit_empresa" class="form-control" placeholder="00000000-0">
+              <div id="mensaje11" class="errores">Ingrese Nit Empresa/Entidad</div>
+            </div>
+
+            <div class="form-group">
+              <label for="user">Razon Social</label>
+              <input type="text" id="razon" class="form-control" placeholder="Razon Social Empresa/Entidad">
+              <div id="mensaje12" class="errores">Ingrese Razon Social</div>
+            </div>
+
+            <div class="form-group">
+              <label for="pass">Nombres y Apellidos Conctacto</label>
+              <input type="text" id="nom_contacto" class="form-control" placeholder=" Nombres y Apellidos Contacto">
+              <div id="mensaje13" class="errores">Ingrese Nombres y Apellidos Contacto</div>
+            </div>  
+
+           <div class="form-group">
+                                            <label for="Usuario" >Tipo Empresa/Entidad</label>
+                                                        
+                                      <select id="tipo_empresa" class="form-control">
+
+                                       <option>Seleccionar Tipo Empresa/Entidad</option>
+                                                                                                                  
+                                      </select>
+
+                                    <div id="mensaje" class="errores">Seleccione Sexo</div>
+                                        </div>
+
+            <div class="form-group">
+              <label for="user">Direccion Entidad/Empresa</label>
+              <input type="text" id="dir_empresa" class="form-control" placeholder="Direccion Entidad/Empresa">
+              <div id="mensaje14" class="errores">Ingrese Direccion Empreda/Entidad</div>
+            </div>
+           
+              
+             <div class="form-group">
+              <label for="pass">Correo Institucional</label>
+              <input type="text" id="correo_empresa" class="form-control" placeholder="Correo Institucinal">
+              <div id="mensaje15" class="errores">Ingrese Correo Institucinal</div>
+            </div>                  
+              
+        
+            <div class="form-group">
+              <label for="pass">Telefono/Celular Institucional</label>
+              <input type="text" id="tel_empresa" class="form-control" placeholder="Tel/Cel">
+              <div id="mensaje16" class="errores">Ingrese Télefono Institucional</div>
+            </div>                  
+             
+          
+            <br>
+            <div class="form-group">
+
+              <input type="submit" name="login" id="btn-reg-emp2" value="Registrar" class="btn btn-success"> 
+              <input type="submit" name="cancelar"  value="Cancelar" class="btn btn-danger salir">
+            </div>
+
+            <br>
+          
+          </form>
+        </div>
+      </div>                        
+                          <div > 
+                         </div>
+                       <div id="respuesta-ingreso"></div>
+                      
+                       </div>
+                       <div class="modal-footer">                 
+             
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          <!--final modal 3-->
+       
+
+       <!-- Inicia modal 4 -->
+       <div class="modal fade" id="ventana4">
+                 <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <button type="button" class="close salir" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <div class="modal-header">
+                      <h3 class="modal-title textos inicio" >Registro Entidad/Egresado ESSC</h3>
+                      
+                       </div>
+       <div class="modal-body" id="resultado2">
+                       <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form method="post" class="formulario">
+            <div class="form-group">
+              <label for="user">Nombres</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombres">
+              <div id="mensaje20" class="errores">Ingrese Nombres</div>
+            </div>
+
+            <div class="form-group">
+              <label for="user">Apellidos</label>
+              <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellidos">
+              <div id="mensaje21" class="errores">Ingrese Apellidos</div>
+            </div>
+
+            <div class="form-group">
+              <label for="user">Documento de Identidad</label>
+              <input type="number" name="documento" id="documento" class="form-control" placeholder="Documento">
+              <div id="mensaje22" class="errores">Ingrese Número de Documento</div>
+            </div>
+
+
+<!--<div class="form-group">
+                <label for="exampleInputFile">Subir Foto</label>nchange="upload_image2();"onchange="upload_imagen();"
+                  <span class="btn btn-default btn-file bg-info">
+                    <input type="hidden" value="0" id="control">
+                     Subir Fotografía <input type="file" id="fileToUpload" >
+                  </span>
+                 <div id="mensaje_foto" class="errores">Error en la fotografia, solo Formato JPG</div>
+             </div>-->
+
+            <div class="form-group">
+              <label for="user">Fecha de Nacimiento</label>
+              <input type="date" name="fecha_nac" value="" id="fecha_nac" class="form-control">
+              <div id="mensaje" class="errores">Ingrese Fecha de Nacimiento</div>
+            </div>
+
+            <div class="form-group">
+                                  <label for="Usuario">Sexo</label>
+                                               <div class="selector-pais">
+                                                 
+                                                  <select class="form-control" id="sexo"></select>
+                                                  <script type="text/javascript">
+                                                      $(document).ready(function() {
+                                                        //alert();
+                                                           $.ajax({
+                                                                  type: "POST",
+                                                                  url: "php/sexo.php",
+                                                                  success: function(response)
+                                                                  {
+                                                                   $('.selector-pais select').html(response).fadeIn();
+                                                                  }
+                                                          });
+
+                                                      });
+                                                  </script>
+                                              </div>
+                          <div id="mensaje" class="errores">Seleccione Sexo</div>
+                              </div>
+              
+        <div class="form-group">
+                    <label for="Usuario">Titulo Obtenido</label>
+                          <div class="selector-titulo">
+                                                 
+                                                  <select class="form-control" id="id_titulo"></select>
+                                                  <script type="text/javascript">
+                                                      $(document).ready(function() {
+                                                        //alert();
+                                                           $.ajax({
+                                                                  type: "POST",
+                                                                  url: "php/titulos.php",
+                                                                  success: function(response)
+                                                                  {
+                                                                   $('.selector-titulo select').html(response).fadeIn();
+                                                                  }
+                                                          });
+
+                                                      });
+                                                  </script>
+                                              </div>
+                   <div id="mensaje4" class="errores">Seleccione el titulo obtenido</div>              
+                </div>
+            <div class="form-group">
+              <label for="pass">Teléfono Celular</label>
+              <input type="number" name="tel" id="tel" class="form-control" placeholder="Télefono Contacto">
+              <div id="mensaje23" class="errores">Ingrese Télefono Celular</div>
+            </div>
+
+           <div class="form-group">
+              <label for="pass">Correo Electrónico</label>
+              <input type="mail" name="email" id="email" class="form-control" placeholder="usuario@operador.com">
+              <div id="mensaje24" class="errores">Ingrese Dirección de correo electrónico</div>
+            </div>    
+
+           <div class="form-group">
+              <div id="contra" class="info">
+                <label for="pass" id="btn-contra" >Contraseña</a></label>
+                <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="Contraseña" value="">
+               <div id="mensaje25" class="errores">Ingrese su contraseña</div>
+                         
+            </div>
+          </div>       
+          
+            <div class="form-group">
+              <label for="pass">Observación</label>
+              <textarea id="observacion" class="form-control" placeholder="Observación"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+             <input type="submit" name="login" id="btn-Reg-egr" value="Registrar Egresado" class="btn btn-success"> 
+              <input type="submit" name="cancelar"  value="Cancelar" class="btn btn-danger salir">
+            </div>
+        
+          </form>
+        </div>
+      </div>                        
+                          <div > 
+                         </div>
+                       <div id="respuesta-ingreso"></div>
+                      
+                       </div>
+                           <div class="modal-footer">                 
+                 
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          <!--final modal 4-->     
+        
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+   <!--<footer>
+<p>Desarrollado por: Jadema Software 2018 </p>
+<p>Jairo Delgado Martinez  313 793 14 68  jademasoftware@gmail.com</p>
+   </footer>-->
+  </body>
+</html>
+<script>
+  $(document).ready(function() {
+          $.ajax({
+          url:"php/tipo_empresa.php",
+          method:"POST",
+          cache:"false",
+          beforeSend:function() {
+          $('#tipo_empresa').val("Conectando...");
+          },
+          success:function(data) {
+          $("#tipo_empresa").html(data);      
+          }
+        });
+
+
+    //inicia la validacion login
+$('#user').empty();
+$('#pass').empty();
+    //var expr = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/;
+
+   $("#login").click(function(e){
+    e.preventDefault();
+    var user=$('#user').val();
+    var pass = $('#pass').val();    
+      if(user==""){
+        $("#mensajeNombre").fadeIn();
+        return false;
+      }else{
+        $("#mensajeNombre").fadeOut();
+         if(pass==""){        
+            $("#mensaje2").fadeIn();
+            return false;
+          }else{
+            $("#mensaje2").fadeOut();
+
+       if($.trim(user).length > 0 && $.trim(pass).length > 0){
+        $.ajax({
+          url:"php/logueame.php",
+          method:"POST",
+          data:{user:user, pass:pass},
+          cache:"false",
+          beforeSend:function() {
+            $('#login').val("Conectando...");
+          },
+          success:function(data){
+            $('#login').val("Ingresar");
+                if (data==1) {
+                  $(location).attr('href','php/menu.php');
+                }else{
+                  $("#result").html("<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Error!</strong> Usuairo no encontrado.</div>");
+              }
+            }
+        });
+      };
+     }
+    }
+    }); 
+//finaliza login
+
+    //inicia la validacion rescate
+
+    //var expr = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/;
+$('#correo').val("");
+$('#respuesta-ingreso_correo').empty(); 
+$("#login_rescate").click(function(e){
+    e.preventDefault();  
+    var tipo_usuario=$('#tipo_usuario').val(); 
+    var correo=$('#correo').val();
+   // alert(tipo_usuario);
+      if(correo==""){
+        $("#mensaje3").fadeIn();
+        return false;
+      }else{
+        $("#mensaje3").fadeOut();
+            //inicia otro intento 
+      if($.trim(correo).length > 0 && $.trim(correo).length > 0){
+        $.ajax({
+          url:"php/rescate.php",
+          method:"POST",
+          data:{
+            correo:correo,
+            tipo_usuario:tipo_usuario
+          },
+          cache:"false",
+          beforeSend:function() {
+            $('#login_rescate').val("Conectando...");
+          },
+          success:function(data) {
+            $('#login_rescate').val("Ingresar");
+         //  $("#respuesta-ingreso_correo").html(data);
+           if (data==1) {             
+
+          $("#respuesta-ingreso_correo").html("<div class='alert alert-dismissible alert-success'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Correcto!</strong> Se ha enviado la contraseña al correo indicado.</div>");
+            } else {
+            $("#respuesta-ingreso_correo").html("<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Error!</strong> Correo no registrado</div>");
+           }
+          }
+        });
+      };
+     }
+    }); 
+//finaliza rescate
+
+   $(".salir").click(function(e){
+      $('.formulario')[0].reset();
+      $("#result").fadeOut();
+      $("#mensaje1").fadeOut();
+      $("#mensaje2").fadeOut();
+      $("#respuesta-ingreso_correo").html();
+      $("#correo").val();
+     });
+
+   $("#btn-reg-emp2").click(function(e){
+  e.preventDefault();
+    var nit_empresa=$('#nit_empresa').val();
+    var razon = $('#razon').val();
+    var nom_contacto=$('#nom_contacto').val();
+    var tipo_empresa = $('#tipo_empresa').val();
+    var dir_empresa=$('#dir_empresa').val();
+    var correo_empresa = $('#correo_empresa').val();
+    var tel_empresa=$('#tel_empresa').val();
+
+      if(nit_empresa ==""){
+        $("#mensaje11").fadeIn();
+        return false;
+      }else{
+        $("#mensaje11").fadeOut();
+         if(razon==""){
+            $("#mensaje12").fadeIn();
+            return false;
+          }else{
+            $("#mensaje12").fadeOut();
+          if(nom_contacto==""){                   
+                      $("#mensaje13").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje13").fadeOut();
+                 //   $("#mensaje14").fadeOut(); 
+                       if(dir_empresa==""){                   
+                      $("#mensaje14").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje14").fadeOut();  
+                       if(correo_empresa==""){                   
+                      $("#mensaje15").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje15").fadeOut();  
+                       if(tel_empresa==""){                   
+                      $("#mensaje16").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje16").fadeOut();      
+        $.ajax({
+          url:"php/recibe_formulario_empresa.php",
+          method:"POST",
+          data:{   
+          //'extra':extra,      
+          'nit_empresa':nit_empresa,
+          'razon':razon,
+          'nom_contacto':nom_contacto,
+          'tipo_empresa':tipo_empresa,
+          'dir_empresa':dir_empresa,
+          'correo_empresa':correo_empresa,
+          'tel_empresa':tel_empresa,
+               },
+          cache:"false",
+          beforeSend:function() {
+            $('#btn-reg-emp2').val("Conectando..."); 
+           },
+          success:function(data) {
+            $('#btn-reg-emp2').val("Ingresar");
+
+            switch(data){
+              case '0':
+               $("#resultado").html("<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Error!</strong> Error al registrar Empresa.</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;  
+              case '1':
+               $("#resultado").html("<div class='alert alert-dismissible alert-success'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Correcto!</strong> Empresa registrada con Éxito, en este momento su solicitud será verificada por la ESSC y su contraseña de acceso se enviará a su correo electrónico</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;
+              case '2':
+               $("#resultado").html("<div class='alert alert-dismissible alert-warning'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Advertencia!</strong> Empresa registrada anteriormente, utilice la recuperacion de contraeña para su acceso.</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;
+
+             }
+        
+          }
+        });
+      }
+         // }
+        }
+
+      }
+    }
+  }
+}
+    });
+
+//inicia el registro egresado
+  $("#btn-Reg-egr").click(function(e){
+  e.preventDefault();
+    var nombre=$('#nombre').val().trim();
+    var apellido = $('#apellido').val().trim();
+    var documento=$('#documento').val().trim();
+    var fecha_nac = $('#fecha_nac').val();
+    var sexo=$('#sexo').val();
+    var id_titulo = $('#id_titulo').val();
+    var tel=$('#tel').val().trim();
+    var email=$('#email').val().trim();
+    var observacion=$('#observacion').val();
+    var new_con=$('#contrasena').val().trim();
+         if(nombre ==""){
+        $("#mensaje20").fadeIn();
+        return false;
+      }else{
+        $("#mensaje20").fadeOut();
+         if(apellido==""){
+            $("#mensaje21").fadeIn();
+            return false;
+          }else{
+            $("#mensaje21").fadeOut();
+          if(documento==""){                   
+                      $("#mensaje22").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje22").fadeOut();
+                 if(tel==""){                   
+                      $("#mensaje23").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje23").fadeOut(); 
+                       if(email==""){                   
+                      $("#mensaje24").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje24").fadeOut();  
+                       if(new_con==""){                   
+                      $("#mensaje25").fadeIn();
+                      return false;
+                    }else{
+                      $("#mensaje25").fadeOut();  
+                        
+        $.ajax({
+          url:"php/recibe_formulario_egresado.php",
+          method:"POST",
+          data:{   
+          'nombre':nombre,
+          'apellido':apellido,
+          'documento':documento,
+          'fecha_nac':fecha_nac,
+          'sexo':sexo,
+          'id_titulo':id_titulo,
+          'tel':tel,
+          'email':email,
+          'observacion':observacion,
+          'new_con':new_con,
+                },
+          cache:"false",
+          beforeSend:function() {
+            $('#btn-Reg-egr').val("Conectando..."); 
+           },
+          success:function(data) {
+            $('#btn-Reg-egr').val("Registrando");
+             //$("#resultado2").html(data);
+             switch(data){
+              case '0':
+               $("#resultado2").html("<div class='alert alert-dismissible alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Error!</strong> Error al registrar Egresado.</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;  
+              case '1':
+               $("#resultado2").html("<div class='alert alert-dismissible alert-success'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Correcto!</strong> Egresados registrado con Éxito.</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;
+              case '2':
+               $("#resultado2").html("<div class='alert alert-dismissible alert-warning'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>¡Advertencia!</strong> Egresados registrado anteriormente, utilice la recuperacion de contraeña para su acceso.</div><button type='button' class='btn btn-danger salir' data-dismiss='modal' >Cerrar</button>");
+              break;
+
+             }
+
+    
+          }
+        });
+      
+          }
+        }
+
+      }
+    }
+  }
+}
+    });
+//finaliza registro egresado
+  });
+</script>

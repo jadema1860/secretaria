@@ -1,0 +1,102 @@
+header{
+
+color: #fff;
+text-align: right;
+background-image: url("../img/baner4.jpg");
+background-repeat: repeat-x;
+width: 100%; 
+ /*background-repeat: no-repeat;*/
+
+/*
+background: #428bca;
+color: #fff;
+text-align: right;*/
+}
+.mayusculas{
+text-transform: uppercase;
+}
+.minusculas{
+text-transform:lowercase;
+}
+.errores{
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,.3);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	background: red;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	color: #fff;
+	display: none;
+	font-size: 14px;
+	margin-top: -38px;
+	margin-left: 460px;
+	padding: 10px;
+	position: absolute;
+	width: 170px;
+
+}
+
+.errores2{
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,.3);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.3);
+	background: red;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	color: #fff;
+	display: none;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding: 10px;
+	position: absolute;
+	width: 170px;
+
+}
+label{
+	color: #428bca;
+}
+.inicio{
+
+	color: #428bca;
+}
+.tarea{
+	columns: 60;
+	rows:3;
+	
+
+}
+.rojo {
+background-color: #FF0000;
+color: #ffffff;
+}
+.notaF{
+background-color: green;
+
+}
+
+#izq{
+float: left;
+
+}
+.centro{
+text-align: center;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  }
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
